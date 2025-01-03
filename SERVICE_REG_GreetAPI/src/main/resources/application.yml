@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: GREET-API
+  boot:
+    admin:
+      client:
+        url:
+          - http://localhost:1111/
+
+  sleuth:
+    enabled: true
+   
+
+  zipkin:
+    base-url: http://localhost:9411/  # Replace with your Zipkin server URL
+    enabled: true  # Enable Zipkin tracing
+
+  cloud:
+    compatibility-verifier:
+      enabled: false  # Disable the Spring Cloud Compatibility Verifier
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'  # Expose all actuator endpoints

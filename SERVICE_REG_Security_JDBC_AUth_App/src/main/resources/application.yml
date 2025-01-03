@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: Security_JDBC
+  datasource:
+    url: jdbc:mysql://localhost:3306/tdbs
+    username: root
+    password: 8576
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
