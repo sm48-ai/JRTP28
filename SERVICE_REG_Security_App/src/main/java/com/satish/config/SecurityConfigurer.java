@@ -20,6 +20,7 @@ public class SecurityConfigurer {
 	    .anyRequest()
 	    .authenticated()
 	).formLogin(); // Configure form-based login
+	System.out.println(" this is config file");
 
 
 		return http.build();
